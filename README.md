@@ -523,12 +523,6 @@ Based on the code in this archive:
 6. Chat titles require an additional Ollama title-generation request after the main response.
 7. The application is configured for a local Flask server on `127.0.0.1:5000`.
 
-## License
-
-No license file or explicit license declaration is included in the supplied project archive.
-
-If this project is distributed publicly, add an appropriate `LICENSE` file and update this section.
-
 ## Summary
 
 Jenimi is a local-first AI chatbot that combines a browser-based interface with a Python Flask backend, SQLite conversation storage, and locally hosted Ollama models. The current implementation provides chat history, conversation persistence, automatic conversation titles, Markdown-formatted AI responses, chat deletion, and automatic Ollama model discovery.
