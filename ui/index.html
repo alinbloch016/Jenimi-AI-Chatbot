@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171717">
+    <title>Jenimi</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <div class="sidebar-top">
+                <div class="brand" aria-label="Jenimi">
+                    <div class="brand-name">jenimi</div>
+                </div>
+
+                <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="Collapse sidebar" title="Collapse sidebar">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <button id="newChatButton" class="new-chat" type="button">
+                <span class="plus-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span>New chat</span>
+            </button>
+
+            <div class="history-header">Recent chats</div>
+            <div id="historyList" class="history-list"></div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <section id="chatArea" class="chat-area">
+            <div id="welcome" class="welcome">
+                <div class="welcome-glow" aria-hidden="true"></div>
+                <div class="welcome-content">
+                    <div class="welcome-eyebrow">JENIMI</div>
+                    <h1>How can <span>jenimi</span> help?</h1>
+                    <p>Ask anything. Your conversations stay on this device.</p>
+                </div>
+            </div>
+
+            <div id="messages" class="messages"></div>
+        </section>
+
+        <div class="composer-area">
+            <form id="messageForm" class="composer" autocomplete="off">
+                <span class="prompt-symbol" aria-hidden="true">›</span>
+
+                <input
+                    id="messageInput"
+                    type="text"
+                    autocomplete="off"
+                    spellcheck="true"
+                    placeholder="Message jenimi..."
+                    aria-label="Message jenimi"
+                >
+
+                <button
+                    id="sendButton"
+                    class="send-button"
+                    type="submit"
+                    aria-label="Send message"
+                    title="Send"
+                >
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 19V5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+                        <path d="M6.5 10.5L12 5L17.5 10.5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+
+            <div class="composer-note">Jenimi can make mistakes. Check important information.</div>
+        </div>
+    </main>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
